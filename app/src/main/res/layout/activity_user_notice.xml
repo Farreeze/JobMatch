@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.userNotice">
+
+    <RelativeLayout
+        android:id="@+id/attachLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Email to Continue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:text="EMAIL"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/messageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="25dp"
+            android:text="@string/message"
+            android:textSize="20sp" />
+
+        <Button
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/resendEmailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend Email"
+            android:layout_below="@id/messageTxt"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/checkVerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh Page"
+            android:layout_below="@id/resendEmailBtn"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/verIndicatorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="Email is not verified."
+            android:layout_below="@id/continue_btn"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"/>
+
+        <Button
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkVerBtn"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentEnd="true"
+            android:text="CONTINUE"
+            android:enabled="false"/>
+
+        <Button
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkVerBtn"
+            android:layout_marginTop="70dp"
+            android:text="LOGOUT" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

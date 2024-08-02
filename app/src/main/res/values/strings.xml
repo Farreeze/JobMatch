@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">JobMatch</string>
+    <string name="email">Email</string>
+    <string name="message">To ensure the security and protection of all our valued users, we kindly ask you to verify your email, set up your profile, and upload a valid ID document. This additional step is crucial for a safer and more secure experience within our application. Thank you for your cooperation.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="passwordResetMsg">Please provide us with the email address associated with your account. If the email matches our records, we will send you a password reset link to start the password recovery process.</string>
+    <string name="no_assigned_user">No Assigned User</string>
+    <string name="done">Done</string>
+    <string name="set_schedule">Set Schedule</string>
+    <string name="no_schedule">No Schedule</string>
+    <string name="termsNConditions1">•	User Accounts - Users will have to create an account in order to use the mobile application. This account will contain information about the user such as their name, age, contact information, and location.</string>
+    <string name="termsNConditions2">•	Job Postings – Users must not use the application to post fake job listings to trick or deceive other users.</string>
+    <string name="termsNConditions3">•	Content - To ensure that the content shared on the app is appropriate, users should avoid using any language that could be considered rude, disrespectful, or offensive to others.</string>
+    <string name="termsNConditions4">•	Privacy Policy - The app will collect personal information from users, including their name, email, phone number, and location. The app will also collect 1 valid ID from the user. These information will be stored in firebase and security will be provided by google.</string>
+    <string name="termsNConditions5">•	Termination and Suspension - Users must conduct themselves in a professional and respectful manner, and they must not post any content that is illegal, harmful, misleading, discriminatory, harassing, or offensive. Failure to comply with these rules may result in account suspension or termination.</string>
+    <string name="termsNConditions6">•	Age Limitation - The app is only available to users who are 18 years old or older. If a user is found to be underage, their account will be terminated, including their information.</string>
+    <string name="termsNConditions7">By using this application, you agree to follow its terms and conditions to ensure a fair, safe, and respectful experience for all users. Failure to abide by these rules may result in account suspension or termination.</string>
+    <string name="close">Close</string>
+    <string name="rate">Rate this user</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>No Schedule</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/posterName_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:padding="10dp"
+        android:text="(job poster name)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line00"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/posterName_tv"
+        android:background="#AEAEAE" />
+
+    <TextView
+        android:id="@+id/posterRep_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line00"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rating:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/NJStart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/line00"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@+id/posterRep_tv"
+        android:src="@drawable/baseline_star_24_4models" />
+
+    <TextView
+        android:id="@+id/NJNumOfRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line00"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/NJStart"
+        android:text="(number of rating)"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/posterRep_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line00"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/posterRep_Label"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/posterRep_Label"
+        android:background="#AEAEAE" />
+
+    <TextView
+        android:id="@+id/nJobTitle_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line0"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="(job title)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nJobCategLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance_tv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Category: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nJobCateg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="(job category)" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nJobCateg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Date: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nJobCateg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="(job date)" />
+
+    <TextView
+        android:id="@+id/jobTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nDate"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Job Type: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nJobType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="(job Type)" />
+
+    <TextView
+        android:id="@+id/numberOfWorkerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nJobType"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Workers Needed: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nNumberOfWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nJobType"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="(number of worker)" />
+
+    <TextView
+        android:id="@+id/nJobRate_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="(job rate)"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nJobTitle_tv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="(distance)"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jobDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nNumberOfWorker"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Job Description: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nJobDescription_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobDescriptionLabel"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="(job description)"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/nJobDescription_tv"
+        android:layout_marginTop="10dp"
+        android:background="#AEAEAE" />
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="APPLY" />
+
+    <Button
+        android:id="@+id/chat_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="CHAT" />
+
+    <ProgressBar
+        android:id="@+id/nearbyJobsModel_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AL_MrelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/shape">
+
+    <ImageView
+        android:id="@+id/applicant_dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/menu_dp" />
+
+    <TextView
+        android:id="@+id/applicant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/applicant_dp"
+        android:text="(applicant name)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/ALine0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/applicant_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/applicant_dp"
+        android:background="#AEAEAE" />
+
+    <TextView
+        android:id="@+id/applicant_jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ALine0"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/applicant_dp"
+        android:padding="10dp"
+        android:text="(job title)"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/AL_dropdownDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicant_jobTitle"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/ALine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#AEAEAE" />
+
+        <TextView
+            android:id="@+id/information_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ALine1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Applicant Information"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reputation_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/information_label"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Rating:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_reputation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/information_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:text="(reputation)"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/AL_star"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@+id/information_label"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/applicant_reputation"
+            android:src="@drawable/baseline_star_24_4models" />
+
+        <TextView
+            android:id="@+id/AL_numRatings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/information_label"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/AL_star"
+            android:text="(number of ratings)" />
+
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_reputation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Gender:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_gender"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_reputation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:text="(applicant gender)"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_gender"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Age:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_age"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:text="(age)"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_age"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Address:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:text="(applicant address)"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_address"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Contact:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_contact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:text="(applicant contact)"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_contact"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Email:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applicant_email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applicant_contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="(applicant email)"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/ALine3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/applicant_email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="#AEAEAE" />
+
+        <Button
+            android:id="@+id/applicant_declineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ALine3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="DECLINE" />
+
+        <Button
+            android:id="@+id/applicant_acceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ALine3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="ACCEPT" />
+
+        <ProgressBar
+            android:id="@+id/applicant_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

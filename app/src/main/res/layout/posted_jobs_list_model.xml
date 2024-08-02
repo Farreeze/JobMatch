@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/postedJobs_model"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/jobTitle_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:padding="10dp"
+        android:text="(job title)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jobRate_tv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:text="(job rate)"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateRangeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobRate_tv"
+        android:layout_marginStart="15dp"
+        android:text="Date: "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pj_dateRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobRate_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="(job date range)"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/jobTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateRangeLabel"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Job Type: "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pj_jobType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateRangeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="(job type)"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/numberOfWorkerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobTypeLabel"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Number of worker: "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pj_numberOfWorkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobTypeLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="(number of workers)"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/postedJobs_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberOfWorkerLabel"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AEAEAE" />
+
+        <TextView
+            android:id="@+id/jobDescription_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="(job description)"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/jobDescription_tv"
+            android:background="#AEAEAE" />
+
+        <TextView
+            android:id="@+id/assigned_user_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="Assigned Person"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_label"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:text="Name:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assigned_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_label"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:text="No Assigned User" />
+
+        <TextView
+            android:id="@+id/contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_name"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:text="Contact:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assigned_user_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_name"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:text="No Assigned User" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_contact"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:text="Email:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assigned_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_contact"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:text="No Assigned User" />
+
+        <TextView
+            android:id="@+id/schedule_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_email"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:text="Schedule:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assigned_user_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assigned_user_email"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:text="No Schedule" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/schedLayout"
+            android:layout_marginTop="10dp"
+            android:background="#AEAEAE" />
+
+        <Button
+            android:id="@+id/deleteJob_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="DELETE" />
+
+        <Button
+            android:id="@+id/chat_assigned_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/schedule_label"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="CHAT" />
+
+        <Button
+            android:id="@+id/openSchedSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_assigned_user_btn"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Set Schedule" />
+
+        <Button
+            android:id="@+id/reminderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_assigned_user_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Send Reminder" />
+
+        <LinearLayout
+            android:id="@+id/schedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openSchedSetter"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Select a Day"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/daySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/days_of_week" />
+
+            <Button
+                android:id="@+id/set_schedule_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_assigned_user_btn"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="SET" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/finishJob_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="FINISH" />
+
+        <ProgressBar
+            android:id="@+id/postedJobs_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

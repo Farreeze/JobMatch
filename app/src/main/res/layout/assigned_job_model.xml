@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/shape">
+
+    <ImageView
+        android:id="@+id/recruiter_dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/menu_dp" />
+
+    <TextView
+        android:id="@+id/recruiter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/recruiter_dp"
+        android:text="(recruiter name)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recruiterRep_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recruiter_name"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/recruiter_dp"
+        android:text="Rating:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recruiter_reputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recruiter_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/recruiterRep_label"
+        android:text="0"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/AJ_star"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:src="@drawable/baseline_star_24_4models"
+        android:layout_toEndOf="@+id/recruiter_reputation"
+        android:layout_below="@+id/recruiter_name"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="3dp" />
+
+    <TextView
+        android:id="@+id/AJ_numRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(number of ratings)"
+        android:layout_toEndOf="@+id/AJ_star"
+        android:layout_below="@+id/recruiter_name"
+        android:layout_marginTop="5dp" />
+
+    <View
+        android:id="@+id/aj_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/recruiter_dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AEAEAE" />
+
+    <TextView
+        android:id="@+id/aj_jobTitle"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_line1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="(job title)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ajSched_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_jobTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Schedule:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ajSched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_jobTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ajSched_label"
+        android:text="No Schedule" />
+
+    <TextView
+        android:id="@+id/aj_jobRate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_line1"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/aj_jobTitle"
+        android:text="(job rate)"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aj_jobDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ajSched"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="(job description)"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/aj_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/aj_jobDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AEAEAE" />
+
+    <Button
+        android:id="@+id/chat_poster_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aj_line3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Chat" />
+
+    <Button
+        android:id="@+id/aj_cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aj_line3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Cancel Job" />
+
+    <ProgressBar
+        android:id="@+id/AJ_PB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

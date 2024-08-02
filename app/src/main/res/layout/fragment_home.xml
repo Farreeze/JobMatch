@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.HomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DFDFDF" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search job title or category" />
+
+        <TextView
+            android:id="@+id/setLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/searchView"
+            android:text="SCANNING RADIUS IN KM"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/negativeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setLabel"
+            android:layout_toStartOf="@id/radiusKM"
+            android:padding="10dp"
+            android:text="-"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiusKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setLabel"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/positiveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setLabel"
+            android:layout_toEndOf="@id/radiusKM"
+            android:padding="10dp"
+            android:text="+"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NoJobsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiusKM"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250dp"
+            android:text="NO JOBS NEARBY" />
+
+        <ProgressBar
+            android:id="@+id/homeProgessbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiusKM"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nearbyJobRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NoJobsLabel" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

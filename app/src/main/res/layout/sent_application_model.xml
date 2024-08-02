@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/shape">
+
+    <ImageView
+        android:id="@+id/SA_dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/menu_dp" />
+
+    <TextView
+        android:id="@+id/SA_posterName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/SA_dp"
+        android:text="(recruiter name)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SA_reputationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_posterName"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/SA_dp"
+        android:text="Rating:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SA_reputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_posterName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/SA_reputationLabel"
+        android:text="0"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/SA_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/SA_posterName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/SA_reputation"
+        android:src="@drawable/baseline_star_24_4models" />
+
+    <TextView
+        android:id="@+id/SA_numRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_posterName"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/SA_star"
+        android:text="(number of ratings)" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/SA_reputationLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AEAEAE" />
+
+    <TextView
+        android:id="@+id/SA_jobTitle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Laundry"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SA_jobRate"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/SA_jobTitle"
+        android:text="(job rate)"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/SA_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/SA_jobTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AEAEAE" />
+
+
+    <TextView
+        android:id="@+id/SA_jobDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_line1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="(job description)"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/SA_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/SA_jobDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AEAEAE" />
+
+    <Button
+        android:id="@+id/SA_cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_line2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Cancel Application" />
+
+    <ProgressBar
+        android:id="@+id/sentApplication_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
